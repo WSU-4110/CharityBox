@@ -1,0 +1,31 @@
+﻿body {
+    font-family: 'Oswald', sans-serif;
+    color: #1E555C;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+    ul li {
+        float: right;
+        width: 85px;
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        color: #1E555C;
+    }
+ul li a {
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: #7C7C7C;
+    }
+ul li:hover ul li {
+    display: contents;
+}
+ul li ul li {
+    display: none;
+}
