@@ -1,14 +1,17 @@
 ﻿body {
     font-family: 'Oswald', sans-serif;
     color: #1E555C;
+    margin: 0px;
+    padding: 0px;
 }
+/*----------------------Navigation Bar----------------------------------------------------*/
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     font-family: 'Oswald', sans-serif;
 }
-    ul li {
+ul li {
         float: right;
         width: 85px;
         height: 40px;
@@ -16,16 +19,40 @@ ul {
         padding: 0px;
         font-size: 15px;
         color: #1E555C;
-    }
+}
 ul li a {
         text-decoration: none;
     }
-    ul li a:hover {
+ul li a:hover {
         color: #7C7C7C;
-    }
+}
 ul li:hover ul li {
     display: contents;
 }
 ul li ul li {
     display: none;
+}
+/*----------------FOOTER------------------------------------*/
+footer {
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    padding: 60px 0px;
+    background-color: #1E555C;
+}
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.image-facebook {
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+#facebook {
+    width: 50px;
+    height: auto;
 }
