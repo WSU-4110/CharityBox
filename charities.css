@@ -29,3 +29,62 @@ ul li:hover ul li {
 ul li ul li {
     display: none;
 }
+
+/*----------------SLIDESHOW------------------------------------*/
+
+#slideshow {
+  overflow: hidden;
+  margin-top: 110px;
+  margin-bottom: 70px;
+}
+#slideshow figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 17s slideshow infinite;
+}
+#slideshow figure img {
+  width: 20%;
+  height: 20%;
+  float: left;
+  height: 520px;
+  max-width: 100%;
+  min-height: 50%;
+}
+
+.slideshow-preloaded {
+    width: auto !important;
+    height: auto !important;
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+
