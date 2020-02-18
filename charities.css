@@ -5,6 +5,7 @@
     padding: 0px;
 }
 /*----------------------Navigation Bar----------------------------------------------------*/
+
 ul {
     list-style-type: none;
     margin: 0px;
@@ -66,5 +67,13 @@ footer {
 .fa-facebook::before {
     color: #1E555C;
 }
-
+/*---------------------------------Table Properties----------------------------------------------------------------*/
+.table-properties {
+    margin: 100px auto;
+    font-size: 0.9em;
+    min-width: 600px;
+}
+.table-properties td {
+    padding: 12px 15px;
+}
 
