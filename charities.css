@@ -14,7 +14,7 @@ ul {
 ul li {
         float: right;
         width: 85px;
-        height: 40px;
+        height: 30px;
         margin: 0px;
         padding: 0px;
         font-size: 15px;
@@ -27,7 +27,7 @@ ul li a:hover {
         color: #7C7C7C;
 }
 ul li:hover ul li {
-    display: contents;
+    display: block;
 }
 ul li ul li {
     display: none;
