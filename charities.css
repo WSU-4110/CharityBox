@@ -5,6 +5,7 @@ body {
     padding: 0px;
 }
 /*----------------------Navigation Bar----------------------------------------------------*/
+
 ul {
     list-style-type: none;
     margin: 0px;
@@ -14,7 +15,7 @@ ul {
 ul li {
         float: right;
         width: 85px;
-        height: 40px;
+        height: 30px;
         margin: 0px;
         padding: 0px;
         font-size: 15px;
@@ -27,7 +28,7 @@ ul li a:hover {
         color: #7C7C7C;
 }
 ul li:hover ul li {
-    display: contents;
+    display: block;
 }
 ul li ul li {
     display: none;
@@ -62,12 +63,81 @@ footer {
     width: 100px;
     height: auto;
     color: #bbccce;
+    
 }
+    .fa-icon a {
+        text-decoration: none;
+        color: #bbccce;
+    }
+    .fa-icon a:hover {
+        color: #7C7C7C;
+    }
+
 .fa-facebook::before {
     color: #1E555C;
 }
+/*---------------------------------Category Icons----------------------------------------------------------------*/
+.wrapper {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+}
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.hover {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #ffffff;
+}
+.image-content {
+    color: #1E555C;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.fade {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0fc4db;
+}
+.container:hover .hover {
+    opacity: 1;
+}
+/*-------------------Table--of--Categories----------------*/
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: #1E555C;
+    border: 3px ridge #000000;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+}
 
-=======
+
+
+align {
+    padding-left: 100px;
+}
+    
+
 
 /*----------------SLIDESHOW------------------------------------*/
 
@@ -75,26 +145,30 @@ footer {
   overflow: hidden;
   margin-top: 110px;
   margin-bottom: 70px;
+  overflow-x: hidden;
+  
 }
 #slideshow figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 17s slideshow infinite;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    animation: 17s slideshow infinite;
 }
-#slideshow figure img {
-  width: 20%;
-  height: 20%;
-  float: left;
-  height: 520px;
-  max-width: 100%;
-  min-height: 50%;
-}
+    #slideshow figure img {
+        width: 20%;
+        float: left;
+        height: 580px;
+        max-width: 100%;
+        min-height: 50%;
+      
+    }
 
 .slideshow-preloaded {
     width: auto !important;
     height: auto !important;
+    display: none;
 }
 @keyframes slideshow {
   0% {
