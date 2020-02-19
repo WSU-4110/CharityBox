@@ -1,14 +1,17 @@
-﻿body {
+body {
     font-family: 'Oswald', sans-serif;
     color: #1E555C;
+    margin: 0px;
+    padding: 0px;
 }
+/*----------------------Navigation Bar----------------------------------------------------*/
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     font-family: 'Oswald', sans-serif;
 }
-    ul li {
+ul li {
         float: right;
         width: 85px;
         height: 30px;
@@ -16,16 +19,111 @@ ul {
         padding: 0px;
         font-size: 15px;
         color: #1E555C;
-    }
+}
 ul li a {
         text-decoration: none;
     }
-    ul li a:hover {
+ul li a:hover {
         color: #7C7C7C;
-    }
+}
 ul li:hover ul li {
     display: block;
 }
 ul li ul li {
     display: none;
 }
+/*----------------FOOTER------------------------------------*/
+footer {
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    padding: 10px 0px;
+    background-color: #1E555C;
+}
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+.social {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+}
+#media {
+    color: #bbccce;
+    font-family: 'Oswald', sans-serif;
+}
+.fa-icon {
+    width: 100px;
+    height: auto;
+    color: #bbccce;
+}
+.fa-facebook::before {
+    color: #1E555C;
+}
+
+=======
+
+/*----------------SLIDESHOW------------------------------------*/
+
+#slideshow {
+  overflow: hidden;
+  margin-top: 110px;
+  margin-bottom: 70px;
+}
+#slideshow figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 17s slideshow infinite;
+}
+#slideshow figure img {
+  width: 20%;
+  height: 20%;
+  float: left;
+  height: 520px;
+  max-width: 100%;
+  min-height: 50%;
+}
+
+.slideshow-preloaded {
+    width: auto !important;
+    height: auto !important;
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+
