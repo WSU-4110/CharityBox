@@ -33,12 +33,6 @@ ul li:hover ul li {
 ul li ul li {
     display: none;
 }
-h1{
-    color: #FFFFFF;
-    border: 2px ridge #1E555C;
-    background-color: #1E555C;
-    padding: 10px;   
-}
 /*----------------FOOTER------------------------------------*/
 footer {
     width: 100%;
