@@ -1,3 +1,18 @@
+/*-----------------------------------Invidual Org Layout---------------------------------*/
+
+img{
+    width: 600px;
+    height: 400px;
+    padding-left: 150px;
+}
+
+p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+     
+}
+
+/*-----------------------------------Layout---------------------------------------------*/
 html{
     background-color: #1E555C;
     padding: 30px;
@@ -19,37 +34,6 @@ h1{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.align{
-    margin-left: 125px;
-}
-
-
-/*-------------------Table--of--Organizations----------------*/
-.box1{
-    width: 200px;
-    height: 200px;
-    background-color: #1E555C;
-    border: 3px ridge #000000;
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-    display: inline-block;
-    align-content: center;
-    
-}
-
-.box2{
-    width: 175px;
-    height: 175px;
-    background-color: #FFFFFF;
-    border: 3px ridge #000000;
-    padding: 3px;
-    margin: 7px;
-    position: absolute;
-    text-align: center;
-    align-content: center;
 }
 
 /*----------------------Navigation Bar----------------------------------------------------*/
