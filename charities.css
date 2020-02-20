@@ -29,6 +29,8 @@ ul li a:hover {
 }
 ul li:hover ul li {
     display: block;
+    background-color: whitesmoke;
+    padding: 5px 5px;
 }
 ul li ul li {
     display: none;
@@ -41,6 +43,22 @@ h1{
 }
 
 /*----------------FOOTER------------------------------------*/
+ul-foot {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+ul-foot li {
+        float: right;
+        width: 85px;
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        color: #1E555C;
+}
+
 footer {
     width: 100%;
     overflow: hidden;
