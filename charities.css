@@ -22,7 +22,7 @@ ul {
 }
 ul li {
         float: right;
-        width: 85px;
+        width: 100px;
         height: 30px;
         margin: 0px;
         padding: 0px;
@@ -31,6 +31,10 @@ ul li {
 }
 ul li a {
         text-decoration: none;
+    }
+    ul li a:visited {
+        text-decoration: none;
+        color: #1E555C
     }
 ul li a:hover {
         color: #7C7C7C;
