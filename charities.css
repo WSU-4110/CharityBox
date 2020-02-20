@@ -230,7 +230,7 @@ align {
   }
 }
 /*-----------------------Contact Form--------------------------------------------*/
-.contactform {
+/*.contactform {
     text-align: center;
     margin-top: 80px;
     color: #1E555C;
@@ -279,6 +279,7 @@ form .submit {
         background-color: #1E555C;
         cursor: pointer;
     }
+    */
 
 /*----------------FORMS------------------------------------*/
 
