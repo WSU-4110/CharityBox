@@ -15,12 +15,24 @@ h1{
     padding: 5px;   
 }
 
+<<<<<<< HEAD
 wrapper{
+=======
+#wrapper{
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
 
+<<<<<<< HEAD
+=======
+.align{
+    margin-left: 125px;
+}
+
+
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
 /*-------------------Table--of--Organizations----------------*/
 .box1{
     width: 200px;
@@ -32,6 +44,10 @@ wrapper{
     text-align: center;
     display: inline-block;
     align-content: center;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
 }
 
 .box2{
@@ -108,4 +124,8 @@ footer {
 }
 .fa-facebook::before {
     color: #1E555C;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
