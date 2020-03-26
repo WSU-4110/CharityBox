@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <h1>Firebase Database Test</h1>
+        <p1>Test html doc for Firebase Implementation</p1>      
+</body>
+    
+<head>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDXjH-Ou-kzGztLmYVOw0xtG0wzj9S-H3M",
+    authDomain: "chartiybox.firebaseapp.com",
+    databaseURL: "https://chartiybox.firebaseio.com",
+    projectId: "chartiybox",
+    storageBucket: "chartiybox.appspot.com",
+    messagingSenderId: "954464642263",
+    appId: "1:954464642263:web:d687e90346eefec322fc92",
+    measurementId: "G-W0T1VZEKY4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+    //reference to database service
+    var database = firebase.database();
+
+</script>
+    
+</head>
+    
+    
+</html>
