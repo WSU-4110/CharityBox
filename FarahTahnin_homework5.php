@@ -35,7 +35,7 @@ var_dump($instance1 == $instance2);
 ?>
 
 <?php
-	
+	//Actual Contact form used in term project
 	/*class Contact {
 		private $host="localhost";
 		private $user="root";
