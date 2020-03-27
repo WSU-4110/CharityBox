@@ -284,6 +284,7 @@ form .submit:hover {
     background-color: #1E555C;
     cursor: pointer;
 }
+
 section {
     width: 100%;
     height: 100vh;
@@ -356,3 +357,5 @@ section {
 .accordion-item:target .accordion-link .ion-md-remove {
     display: block;
 }
+
+
