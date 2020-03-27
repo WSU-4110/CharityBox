@@ -1,13 +1,13 @@
 //Database Connection
 
-public class Contract{
+public class Contact{
 
-    private static Contract instance=null;
+    private static Contact instance=null;
     private SQLConnection conn;
     public String s;
 
 
-    private Contract() { 
+    private Contact() { 
 	String host = "localhost";
 	String user = "root";
 	String pass = "root1234";
@@ -20,12 +20,12 @@ public class Contract{
 
    }
 
-    public static Contract getContract() {
+    public static Contact getContact() {
       if (instance== null ) 
-		instance = new Contract() ;                           
+		instance = new Contact() ;                           
 
       return instance;
     }
 }
 
-Contract conn=Contract.getContract();
+Contact conn=Contact.getContact();
