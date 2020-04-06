@@ -30,7 +30,7 @@
     <h1> <center> Contact Form </center> </h1>
     <p> <center> Please fill out the form below for any questions or concerns you may have! </center> </p>
     <div class="contactform">
-        <form id="contactform" method="post" action="">
+        <form id="contactform" method="post" action="function.php">
            <!-- <label for="myFname"> First Name: </label></label>-->
             <input type="text" name="myFname" class="form-control" placeholder="First Name" required><br>
        
@@ -48,20 +48,6 @@
 
             <input type="submit" name="submit" class="form-control submit" value="SUBMIT">
         </form>
-		<?php
-	if(isset($_POST['submit'])) {
-	include_once 'function.php';
-	$obj=new Contact();
-	$res=$obj->contact_us($_POST);
-	if($res==true)
-	{
-		echo"<script>alert('Query successfully submitted. Thank you')</script>";
-	}
-	else {
-		echo"<script>alert('Something went wrong!!')</script>";
-	}
-	}
-	?>
     </div>
     </div>
     <!--Form Page-->
