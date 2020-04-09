@@ -40,9 +40,11 @@
           <!--   <label for="myEmail"> E-mail: </label> -->
             <input type="text" name="myEmail" class="form-control"  placeholder="Email" required><br>
             
-            <!--   <label for="myComments"> Contact Us: </label> -->
-            <textarea name="myComments" class="form-control" placeholder="Enter comments here" cols="20" rows="2" required></textarea>
+            <!--   <label for="myEmail"> E-mail: </label> -->
+            <input type="text" name="myComments" class="form-control"  placeholder="Enter comments here" required><br>
                   
+        
+         
 
             <input type="submit" name="submit" class="form-control submit" value="SUBMIT">
         </form>
