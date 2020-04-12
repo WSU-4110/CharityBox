@@ -63,16 +63,7 @@
   <input type="text" name="FirstName"><br><br>
   Last Name:
   <input type="text" name="LastName"><br><br>
-  Age:
-  <input type="text" name="Age"><br><br>
-  Gender:
-  <select name = "Gender">
-  		<option value = "Male">Male</option>
-  		<option value = "Female">Female</option>
-  		<option value = "NonBinary">Non-binary</option>
-  		<option value = "0">Would Rather Not Disclose</option>
-  </select>
-  <br><br>
+
   
   <input type="hidden" name="FormName" value="NewUser"/>
   <input type="submit" value="Submit">
