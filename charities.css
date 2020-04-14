@@ -20,7 +20,7 @@ ul {
     padding: 0px;
     font-family: 'Oswald', sans-serif;
 }
-ul li {
+    ul li {
         float: right;
         width: 100px;
         height: 30px;
@@ -28,9 +28,11 @@ ul li {
         padding: 0px;
         font-size: 15px;
         color: #1E555C;
-}
+        
+    }
 ul li a {
         text-decoration: none;
+        
     }
     ul li a:visited {
         text-decoration: none;
@@ -44,9 +46,9 @@ ul li:hover ul li {
     background-color: whitesmoke;
     padding: 5px 5px;
 }
-ul li ul li {
-    display: none;
-}
+        ul li ul li {
+           display: contents;
+        }
 /*----------------FOOTER------------------------------------*/
 ul-foot {
     list-style-type: none;
