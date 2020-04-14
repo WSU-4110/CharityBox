@@ -29,6 +29,11 @@ ul {
         padding: 0px;
         font-size: 15px;
         color: #1E555C;
+
+}
+ul li a {
+        text-decoration: none;
+
     }
 
         ul li a {
@@ -53,7 +58,11 @@ h1 {
     color: #FFFFFF;
     border: 2px ridge #1E555C;
     background-color: #1E555C;
+
     padding: 10px;
+
+    padding: 10px;   
+
 }
 
 /*----------------FOOTER------------------------------------*/
@@ -75,6 +84,7 @@ ul-foot {
     }
 
 footer {
+    margin-top: 50px;
     width: 100%;
     overflow: hidden;
     left: 0px;
@@ -315,6 +325,7 @@ form .submit {
     margin-top: 20px;
 }
 
+
     form .submit:hover {
         background-color: #1E555C;
         cursor: pointer;
@@ -322,6 +333,12 @@ form .submit {
 
 
 
+
+
+form .submit:hover {
+    background-color: #1E555C;
+    cursor: pointer;
+}
 
 section {
     width: 100%;
@@ -404,5 +421,24 @@ section {
     display: block;
 }
 
+/*----------------------ABOUT US----------------------*/
 
+
+
+
+.about
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin bottom: 50px;
+    margin-top: 50px;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 

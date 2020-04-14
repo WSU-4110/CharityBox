@@ -109,3 +109,17 @@ footer {
 .fa-facebook::before {
     color: #1E555C;
 }
+
+/*---------------COUNTER-----------------------------------*/
+counter-container
+{
+    margin: 10% auto;
+    color: white;
+}
+icon
+{
+    border: 1px solid #FFF;
+    height: 100px;
+    width 100px;
+    margin 20px;
+}
