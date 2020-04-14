@@ -27,7 +27,11 @@ ul li {
         margin: 0px;
         padding: 0px;
         font-size: 15px;
+<<<<<<< HEAD
+        color: white;
+=======
         color: #1E555C;
+>>>>>>> 2654b1bb0e0211e67dc618cac447d3a7ff45b34a
 }
 ul li a {
         text-decoration: none;
@@ -46,8 +50,20 @@ ul li ul li {
 h1{
     color: #FFFFFF;
     border: 2px ridge #1E555C;
+<<<<<<< HEAD
+    background-color: #1E555C;  
+    float: left;
+    width: 100%;
+    margin-top:-70px;
+}
+
+nav{
+    float: right;
+    padding-top: 15.5px;
+=======
     background-color: #1E555C;
     padding: 10px;   
+>>>>>>> 2654b1bb0e0211e67dc618cac447d3a7ff45b34a
 }
 
 /*----------------FOOTER------------------------------------*/
@@ -113,7 +129,11 @@ footer {
 }
 /*---------------------------------Category Icons----------------------------------------------------------------*/
 .wrapperorgs {
+<<<<<<< HEAD
+    margin-top: 50px;       /*margin in organization page
+=======
     margin-top: 70px;
+>>>>>>> 2654b1bb0e0211e67dc618cac447d3a7ff45b34a
     text-align: center;
     
 }
@@ -285,6 +305,8 @@ form .submit:hover {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
 section {
     width: 100%;
     height: 100vh;
@@ -359,3 +381,4 @@ section {
 }
 
 
+>>>>>>> 2654b1bb0e0211e67dc618cac447d3a7ff45b34a
