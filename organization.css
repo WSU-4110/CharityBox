@@ -125,7 +125,25 @@ footer {
 .fa-facebook::before {
     color: #1E555C;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
+=======
+}
+
+/*---------------COUNTER-----------------------------------*/
+counter-container
+{
+    margin: 10% auto;
+    color: white;
+}
+icon
+{
+    border: 1px solid #FFF;
+    height: 100px;
+    width 100px;
+    margin 20px;
+}
+>>>>>>> ca977a30970e641178ee2785bd31d1793c262df7
