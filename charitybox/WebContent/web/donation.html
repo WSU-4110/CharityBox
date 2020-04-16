@@ -13,7 +13,7 @@
     <!--Navigation Bar-->
     <nav>
         <ul>
-            <li><a>Sign in/Sign Up</a></li>
+            <li><a href="../index.jsp">Sign in/Sign Up</a></li>
             <li><a href="frequentlyaskedquestions.html">FAQ</a></li>
             <li>
                 <a>Forms</a>
@@ -38,7 +38,7 @@
         <h1> <center> Donation Form </center> </h1>
         <p> <center> Please fill out the form below to process your donation! </center> </p>
         <div class="donationform">
-            <form id="donationform" method="post" action="">
+            <form id="donationform" action="../controller.jsp" method="post" action="">
                 <!-- <label for="myFname"> First Name: </label></label>-->
                 <input type="text" name="myFname" class="form-control" placeholder="First Name" required><br>
 
@@ -54,8 +54,7 @@
                 <!--   <label for="myDonation"> Donation: </label> -->
                 <input type="text" name="myDonation" class="form-control" placeholder="Donation Item" required><br>
 
-
-
+			    <input type="hidden" name="FormName" value="NewDonation"/>
                 <input type="submit" class="form-control submit" value="SUBMIT">
             </form>
         </div>

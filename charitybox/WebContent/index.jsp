@@ -60,10 +60,22 @@
 		</form> 
 	</div>
 </div>
+
+<%-- 
+
 <% 
 		String validateUser = "Valid Inputs";
 		if(validateUser.equals(session.getAttribute("ValidUser")))
-			{%><h4><font color = "red">New User Created</font></h4> <%}%>
+			{
+				%>
+					<h4><font color = "red">New User Created</font></h4> 
+				<%
+			}
+
+%>
+
+ --%>
+ 
 <br><br><hr><br><br>
 
 <!--form for new user to input their username and password.-->
@@ -74,28 +86,33 @@
 	<div class="contactform">
  	
 			 <form id="contactform" action="controller.jsp" method="POST" class="form-control">
-			  Username:
-			  <input type="text" name="Username" class="form-control"><br><br>
+			  First Name:
+			  <input type="text" name="FirstName" class="form-control"><br><br>
+			  Last Name:
+			  <input type="text" name="LastName" class="form-control"><br><br>
 			  Email: 
 			  <input type = "text" name="Email" class="form-control"><br><br>
 			  Password:
 			  <input type="text" name="Password" class="form-control"><br><br>
 			  Verify Password:
 			  <input type="text" name="VerifyPassword" class="form-control"><br><br>
-			  First Name:
-			  <input type="text" name="FirstName" class="form-control"><br><br>
-			  Last Name:
-			  <input type="text" name="LastName" class="form-control"><br><br>
 			  <input type="hidden" name="FormName" value="NewUser"/>
 			  <input type="submit" class="form-control submit" value="Submit">
 			</form> 
 	</div>
 </div>
 
+<%-- 
 <% 
-		validateUser = "Invalid Inputs";
-		if(validateUser.equals(session.getAttribute("ValidUser")))
-			{%><h4><font color = "red">Invalid Inputs</font></h4> <%}%>
+	validateUser = "Invalid Inputs";
+	if(validateUser.equals(session.getAttribute("ValidUser")))
+		{
+			%>
+				<h4><font color = "red">Invalid Inputs</font></h4> 
+			<%
+		}
+%> 
+--%>
 <br><br><br><br><br>
 </body>
 

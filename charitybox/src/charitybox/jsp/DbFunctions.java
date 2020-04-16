@@ -97,22 +97,21 @@ public class DbFunctions extends HttpServlet{
 	//========================================================
 		// INSERT USER INTO DATABASE
 		//========================================================
-		  public boolean insertUser(String userID, String firstName, String lastName, String email, String password) throws SQLException {
+		  public boolean insertUser(String firstName, String lastName, String email, String password) throws SQLException {
 			  
 			  connect_func();
 			  //store sql statement as string
-			  String sql0 = "INSERT INTO Users(UserID, Password, Email, FirstName, LastName)\r\n" + 
-			  		" VALUES (?, ?, ?, ?, ?)";
+			  String sql0 = "INSERT INTO Users(Password, Email, FirstName, LastName)\r\n" + 
+			  		" VALUES (?, ?, ?, ?)";
 			 
 			  Boolean rowInserted = false;
 			  
 			  // create and load prepared statement
 			  	preparedStatement = (PreparedStatement) connect.prepareStatement(sql0);
-			  	preparedStatement.setString(1, userID);
-				preparedStatement.setString(2, password);
-				preparedStatement.setString(3, email);
-				preparedStatement.setString(4, firstName);
-				preparedStatement.setString(5, lastName);
+				preparedStatement.setString(1, password);
+				preparedStatement.setString(2, email);
+				preparedStatement.setString(3, firstName);
+				preparedStatement.setString(4, lastName);
 				
 				try {
 				//execute prepared statement
@@ -125,26 +124,25 @@ public class DbFunctions extends HttpServlet{
 			        return rowInserted;
 		  }
 
-		//========================================================
+		  	//========================================================
 			// INSERT ORGANIZATION INTO DATABASE
 			//========================================================
-			  public boolean insertOrg(String orgID, String orgName, String address,
+			  public boolean insertOrg(String orgName, String address,
 					  String phoneNum, String email) throws SQLException {
 				  
 				  connect_func();
 				  //store sql statement as string
-				  String sql0 = "INSERT INTO Organizations(OrgID, OrgName, Address, PhoneNum, Email)\r\n" + 
-				  		" VALUES (?, ?, ?, ?, ?)";
+				  String sql0 = "INSERT INTO Organizations(OrgName, Address, PhoneNum, Email)\r\n" + 
+				  		" VALUES (?, ?, ?, ?)";
 				 
 				  Boolean rowInserted = false;
 				 
 				  // create and load prepared statement
 				  	preparedStatement = (PreparedStatement) connect.prepareStatement(sql0);
-				  	preparedStatement.setString(1, orgID);
-					preparedStatement.setString(2, orgName);
-					preparedStatement.setString(3, address);
-					preparedStatement.setString(4, phoneNum);
-					preparedStatement.setString(5, email);
+					preparedStatement.setString(1, orgName);
+					preparedStatement.setString(2, address);
+					preparedStatement.setString(3, phoneNum);
+					preparedStatement.setString(4, email);
 					
 					try {
 					//execute prepared statement
@@ -157,6 +155,34 @@ public class DbFunctions extends HttpServlet{
 				        return rowInserted;
 			  }
 
+			  	//========================================================
+				// INSERT DONATION INTO DATABASE
+				//========================================================
+				  public boolean insertDonation(String address, String email, String donation) throws SQLException {
+					  
+					  connect_func();
+					  //store sql statement as string
+					  String sql0 = "INSERT INTO Donations(Address, Email, Donation)\r\n" + 
+					  		" VALUES (?, ?, ?)";
+					 
+					  Boolean rowInserted = false;
+					 
+					  // create and load prepared statement
+					  	preparedStatement = (PreparedStatement) connect.prepareStatement(sql0);
+						preparedStatement.setString(1, address);
+						preparedStatement.setString(2, email);
+						preparedStatement.setString(3, donation);
+						
+						try {
+						//execute prepared statement
+						rowInserted = preparedStatement.executeUpdate() > 0;
+					        preparedStatement.close();}
+						catch(Exception e) {
+							System.out.println(e);
+						}
+				
+					        return rowInserted;
+				  }
 	  
 
 	  /*
@@ -194,34 +220,46 @@ public class DbFunctions extends HttpServlet{
 		 	connect_func();  
 	    	//request.getParameter("Username");
 		 	
-		 	String sql0 = "DROP TABLE IF EXISTS Organizations";
-		 	String sql1 = "DROP TABLE IF EXISTS Users";
-		 	
-		 	String sql2 = "CREATE TABLE Organizations(" + 
-		 			"OrgID varchar(40) NOT NULL," + 
+		 	//String sqld1 = "DROP TABLE IF EXISTS Users" ;
+		 	//String sqld2 = "DROP TABLE IF EXISTS Organizations";
+		 	//String sqld3 = "DROP TABLE IF EXISTS Donations" ;
+
+		 	String sql1 = "CREATE TABLE Organizations(" + 
 		 			"OrgName varchar(40) NOT NULL," + 
 		 			"Address varchar(40) NOT NULL," + 
 		 			"PhoneNum varchar(11) NOT NULL," +
 		 			"Email varchar(40) NOT NULL," + 
-		 			"PRIMARY KEY(OrgID)," + 
+		 			"PRIMARY KEY(OrgName)," + 
 		 			"CHECK (Email like '%_@__%.__%'));";
 		 			
-		 	String sql3 = "CREATE TABLE Users(" + 
-		 			"UserID varchar(40) NOT NULL," + 
+		 	String sql2 = "CREATE TABLE Users(" + 
 		 			"Password varchar(40) NOT NULL," + 
 		 			"Email varchar(40) NOT NULL," + 
 		 			"FirstName varchar(40) NOT NULL," + 
 		 			"LastName varchar(40) NOT NULL," + 
-		 			"PRIMARY KEY(UserID));";
+		 			"PRIMARY KEY(Email)," +
+		 			"CHECK (Email like '%_@__%.__%'));";
 		 	
+		 	String sql3 = "CREATE TABLE Donations(" + 
+		 			"Address varchar(40) NOT NULL," + 
+		 			"Email varchar(40) NOT NULL," +  
+		 			"Donation varchar(40) NOT NULL," +
+		 			"PRIMARY KEY(Email)," +
+		 			"CHECK (Email like '%_@__%.__%'));";
 		 	
-		 	// drop the tables then recreate them
+		 	//create tables, no need to drop them. 
+		 	//we want them to stay updated and not recreate on every new visit to the site
+		 	
 		 	try {
 		 	statement =  (Statement) connect.createStatement();
-		 	statement.executeUpdate(sql0);
+		 	//statement.executeUpdate(sqld1);
+		 	//statement.executeUpdate(sqld2);
+		 	//statement.executeUpdate(sqld3);
+		 	
 		 	statement.executeUpdate(sql1);
 		 	statement.executeUpdate(sql2);
 		 	statement.executeUpdate(sql3);
+		 	
 		 	
 		 	}
 		 	catch(Exception e) {
@@ -232,16 +270,18 @@ public class DbFunctions extends HttpServlet{
 		 	
 		 	DbFunctions test = new DbFunctions();
 			// initialize user table
-		 	test.insertUser("root", "Evan", "Nguyen", "evan@gmail.com", "pass1234");
-		 	test.insertUser("u1", "John", "Doe", "john.doe@gmail.com", "johndoe");
-		 	test.insertUser("u2", "James", "Cold", "james@gmail.com", "jamespass");
+		 	test.insertUser("Evan", "Nguyen", "evan@gmail.com", "pass1234");
+		 	test.insertUser("John", "Doe", "john.doe@gmail.com", "johndoe");
+		 	test.insertUser("James", "Cold", "james@gmail.com", "jamespass");
 		 	
 		 	
 		 	// initialize orgs table
 		
-		 	test.insertOrg("o1", "Meals on Wheels", "1 First Street", "313-313-313", "mow@gmail.com");
-		 	test.insertOrg("o2", "Kids Against Hunger", "2 Second Street", "586-586-586", "kah@gmail.com");
+		 	test.insertOrg("Meals on Wheels", "1 First Street", "313-313-313", "mow@gmail.com");
+		 	test.insertOrg("Kids Against Hunger", "2 Second Street", "586-586-586", "kah@gmail.com");
 			
+		 	// insert a donation for the table
+		 	test.insertDonation("262 dodson street", "kevin@gmail.com", "2 xl shirts");
 	
 	        return true;
 			

@@ -91,17 +91,17 @@ switch(htmlFormName) {
 	  String newPassword = request.getParameter("Password");
 	  String verifyPassword = request.getParameter("VerifyPassword");
 	  String email = request.getParameter("Email");
-	  String newUsername = request.getParameter("Username");
+	//String newUsername = request.getParameter("Username");
 	  String firstName = request.getParameter("FirstName");
 	  String lastName = request.getParameter("LastName");
 	  
 	  Boolean validateEmail = validEmail(email);
 	  Boolean emailExists = test.searchForEmail(email);
-	  Boolean usernameExists = test.searchForUsername(newUsername);
+	//Boolean usernameExists = test.searchForUsername(newUsername);
 	  
-	  if(!usernameExists && !emailExists && newPassword.equals(verifyPassword) && validateEmail){
+	  if(/*!usernameExists &&*/ !emailExists && newPassword.equals(verifyPassword) && validateEmail){
 		  output.println("new user validated");
-	 		test.insertUser(newUsername, firstName, lastName, email, newPassword);
+	 		test.insertUser(firstName, lastName, email, newPassword);
 	 		
 	 		// redirect back
 			session.setAttribute("ValidUser", "Valid Inputs");
@@ -118,6 +118,25 @@ switch(htmlFormName) {
 	  
  		
 	  break;
+
+	// =======================================================
+	  // INITIALIZE CASE
+	  // =======================================================
+	   
+	   case "NewDonation":
+	 	  String donation = request.getParameter("myAddress"); //switched donation and address parameters because they were out of 
+	 	  String donationEmail = request.getParameter("myEmail");
+	 	  String donationAddress = request.getParameter("myDonation");//order on the donation form
+	 	  //String firstName = request.getParameter("FirstName");
+	 	  //String lastName = request.getParameter("LastName");
+	 	 
+			test.insertDonation(donation, donationEmail, donationAddress);
+	 	  	session.setAttribute("ValidUser", "Valid Inputs");
+			redirectURL = "web/index.html";
+    		response.sendRedirect(redirectURL);
+  
+	 		break;
+
 
 }
 %>
