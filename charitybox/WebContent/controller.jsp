@@ -27,6 +27,8 @@ String redirectURL;
 Object sessionUserObject = session.getAttribute("Username");
 String sessionUser = String.valueOf(sessionUserObject);
 
+test.initializeDb();
+
 switch(htmlFormName) {
 
 // ====================================================================
@@ -139,7 +141,7 @@ public static boolean validEmail(String email)
 <%
 /*
 // ========================================================
-// ADD ITEM CASE
+// ADD DONATION ITEM CASE
 // ========================================================
   case "AddItem":
 	  output = response.getWriter();

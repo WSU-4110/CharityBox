@@ -14,23 +14,21 @@
 
 <meta charset="ISO-8859-1">
 	<head>
-		<title> login </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="web/charities.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<title>CharityBox: Log In</title>
 	</head>
 
-<h1>CharityBox</h1>
-
-
 <body>
-	 <!--Navigation Bar-->
+	<h1>CharityBox</h1>
+	<!--Navigation Bar-->
     <nav>
         <ul>
-            <li><a>FAQ</a></li>
+            <li><a href="web/frequentlyaskedquestions.html">FAQ</a></li>
             <li><a href="web/feedbackform.html">Feedback Form</a></li>
-            <li><a href="web/contactform.html">Contact Us</a></li>
+            <li><a href="web/contactform.php">Contact Us</a></li>
             <li><a href="index.jsp">Login</a></li>
             <li><a href="web/about.html">About Us</a>
             </li>
@@ -38,59 +36,68 @@
         </ul>
     </nav>
    <!--Navigation Bar-->
-</body>
 
+		
 
-<form action = "controller.jsp" method = "GET">
-	<input type="submit" value="Initialize" name = "initialize">
-	 <input type="hidden" name="FormName" value="Initialize"/>
-</form>
 
 
 <!--form for user to input their username and password.-->
 
-
- <form action="controller.jsp" method="POST" >
-  Username:<br>
-  <input type="text" name="Username"><br>
-  Password:<br>
-  <input type="text" name="Password"><br><br>
-  <input type="hidden" name="FormName" value="Authenticate"/>
-  <input type="submit" value="Submit">
-</form> 
+<div class="centerprop">
+	<h1> <center> Sign In Here! </center> </h1>
+	<p> <center> Existing users, log in here! </center> </p>
+		 
+	<div class="contactform">
+		
+		 <!-- <label for="Username"> Email: </label></label>-->
+		 <form id="contactform" action="controller.jsp" method="POST" class="form-control">
+		  Email:<br>
+		  <input type="text" name="Username" class="form-control"><br>
+		  Password:<br>
+		  <input type="text" name="Password" class="form-control"><br><br>
+		  <input type="hidden" name="FormName" value="Authenticate"/>
+		  <input type="submit" class="form-control submit" value="Submit">
+		</form> 
+	</div>
+</div>
 <% 
 		String validateUser = "Valid Inputs";
 		if(validateUser.equals(session.getAttribute("ValidUser")))
 			{%><h4><font color = "red">New User Created</font></h4> <%}%>
 <br><br><hr><br><br>
-<h2> New? Sign up here
-</h2>
 
 <!--form for new user to input their username and password.-->
+<div class="centerprop">
+	<h1> <center> Sign Up </center> </h1>
+	<p> <center>  New? Sign Up Here! </center> </p>
+		 
+	<div class="contactform">
+ 	
+			 <form id="contactform" action="controller.jsp" method="POST" class="form-control">
+			  Username:
+			  <input type="text" name="Username" class="form-control"><br><br>
+			  Email: 
+			  <input type = "text" name="Email" class="form-control"><br><br>
+			  Password:
+			  <input type="text" name="Password" class="form-control"><br><br>
+			  Verify Password:
+			  <input type="text" name="VerifyPassword" class="form-control"><br><br>
+			  First Name:
+			  <input type="text" name="FirstName" class="form-control"><br><br>
+			  Last Name:
+			  <input type="text" name="LastName" class="form-control"><br><br>
+			  <input type="hidden" name="FormName" value="NewUser"/>
+			  <input type="submit" class="form-control submit" value="Submit">
+			</form> 
+	</div>
+</div>
 
- <form action="controller.jsp" method="POST" >
-  Username:
-  <input type="text" name="Username"><br><br>
-  Email: 
-  <input type = "text" name="Email"><br><br>
-  Password:
-  <input type="text" name="Password"><br><br>
-  Verify Password:
-  <input type="text" name="VerifyPassword"><br><br>
-  First Name:
-  <input type="text" name="FirstName"><br><br>
-  Last Name:
-  <input type="text" name="LastName"><br><br>
-
-  
-  <input type="hidden" name="FormName" value="NewUser"/>
-  <input type="submit" value="Submit">
-</form> 
 <% 
 		validateUser = "Invalid Inputs";
 		if(validateUser.equals(session.getAttribute("ValidUser")))
 			{%><h4><font color = "red">Invalid Inputs</font></h4> <%}%>
 <br><br><br><br><br>
+</body>
 
 </html>
 
