@@ -13,12 +13,21 @@
     <!--Navigation Bar-->
     <nav>
         <ul>
-            <li><a>FAQ</a></li>
-            <li><a href="feedbackform.html">Feedback Form</a></li>
-            <li><a href="contactform.html">Contact Us</a></li>
-            <li><a>Login</a></li>
+            <li><a>Sign in/Sign Up</a></li>
+            <li><a href="frequentlyaskedquestions.html">FAQ</a></li>
             <li>
-                <a>About Us</a>
+                <a>Forms</a>
+                <ul>
+                    <li><a href="contactform.php">Contact</a></li>
+                    <li><a href="feedbackform.html">Feedback Form</a></li>
+                    <li><a href="organizationsignupform.html">Organization Sign Up</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+                <ul>
+                    <li><a href="OrganizationSummary.html">Org Summary</a></li>
+                </ul>
             </li>
             <li><a href="index.html">Home</a></li>
         </ul>
@@ -53,23 +62,28 @@
     <!--Form Page-->
 
    <!--Footer Bar-->
-    <footer>
-        <div class="wrapper">
+     <footer>
+        <div class="wrappersocial">
             <div class="social">
-                <ul>
+                <ul-foot>
                     <li class="fa-icon">
-                        <i class="fa fa-facebook-f"></i>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
                     </li>
                     <li class="fa-icon">
-                        <i class="fa fa-instagram"></i>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                     </li>
                     <li class="fa-icon">
-                        <i class="fa fa-twitter"></i>
+                        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
                     </li>
-                </ul>
+                </ul-foot>
             </div>
-            
+
         </div>
+        <br>
+        <small>
+            Copyright &copy; CharityBox<br>
+            <a href="mailto: contact@CharityBox@gmail.com"> contact@info.charitybox@gmail.com</a>
+        </small>
     </footer>
     <!--Footer Bar-->
 </body>

@@ -6,26 +6,36 @@
     <link rel="stylesheet" href="charities.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>CharityBox Home</title>
+    <title>CharityBox: Home</title>
 </head>
 <body>
     <h1>CharityBox</h1>
     <!--Navigation Bar-->
     <nav>
         <ul>
+            <li><a>Sign in/Sign Up</a></li>
             <li><a href="frequentlyaskedquestions.html">FAQ</a></li>
-            <li><a href="feedbackform.html">Feedback Form</a></li>
-            <li><a href="contactform.html">Contact Us</a></li>
-            <li><a>Login</a></li>
             <li>
-                <a>About Us</a>
+                <a>Forms</a>
+                <ul>
+                    <li><a href="contactform.php">Contact</a></li>
+                    <li><a href="feedbackform.html">Feedback Form</a></li>
+                    <li><a href="organizationsignupform.html">Organization Sign Up</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+                <ul>
+                    <li><a href="OrganizationSummary.html">Org Summary</a></li>
+                </ul>
             </li>
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
-    
+
     <!--Slideshow Bar-->
     <div id="slideshow">
+        <a href="NewsPage.html">
         <figure>
             <img src="img4.jpg" alt="">
             <img src="img5.jpg" alt="">
@@ -33,6 +43,7 @@
             <img src="img7.jpg" alt="">
             <img src="img10.jpg" alt="">
         </figure>
+            </a>
     </div>
     <!--Slideshow Bar-->
 
@@ -40,7 +51,7 @@
         <!-----First Row of Orgs----->
         <div class="box1">
             <div class="container">
-        
+
                 <img src="food-icon.jpg" />
                 <div class="hover fade">
                     <div class="image-content">
@@ -69,7 +80,7 @@
                 <img src="hygiene-icon.jpg" />
                 <div class="hover fade">
                     <div class="image-content">
-                        Donate Hygiene Products
+                       <a href="Hygiene.html"> Donate Hygiene Products</a>
                     </div>
                 </div>
 
@@ -85,7 +96,7 @@
                 <img src="clothing-icon.jpg" />
                 <div class="hover fade">
                     <div class="image-content">
-                        Donate Clothing
+                       <a href="clothingorgs.html"> Donate Clothing</a>
                     </div>
                 </div>
 
@@ -98,7 +109,7 @@
                 <img src="books-icon.jpg" />
                 <div class="hover fade">
                     <div class="image-content">
-                        Donate Books
+                        <a href="books.html">Donate Books</a>
                     </div>
                 </div>
 
@@ -110,7 +121,7 @@
                 <img src="schoolsupplies-icon.jpg" />
                 <div class="hover fade">
                     <div class="image-content">
-                        Donate School Supplies
+                        <a href="schoolsuppliesorgs.html">Donate School Supplies</a>
                     </div>
                 </div>
 
@@ -119,7 +130,7 @@
     </div>
     <!-----Second Row of Orgs----->
     <footer>
-        <div class="wrapper">
+        <div class="wrappersocial">
             <div class="social">
                 <ul-foot>
                     <li class="fa-icon">
@@ -136,8 +147,10 @@
 
         </div>
         <br>
-       <small> Copyright &copy; CharityBox<br>
-           <a href="mailto: contact@CharityBox@gmail.com"> contact@charityboxinquiries@gmail.com</a></small>
+        <small>
+            Copyright &copy; CharityBox<br>
+            <a href="mailto: contact@CharityBox@gmail.com"> contact@info.charitybox@gmail.com</a>
+        </small>
     </footer>
 
 </body>
