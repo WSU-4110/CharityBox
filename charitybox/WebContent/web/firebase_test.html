@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-database.js.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDXjH-Ou-kzGztLmYVOw0xtG0wzj9S-H3M",
+    authDomain: "chartiybox.firebaseapp.com",
+    databaseURL: "https://chartiybox.firebaseio.com",
+    projectId: "chartiybox",
+    storageBucket: "chartiybox.appspot.com",
+    messagingSenderId: "954464642263",
+    appId: "1:954464642263:web:d687e90346eefec322fc92",
+    measurementId: "G-W0T1VZEKY4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('login_page_background.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+    
+.color-box{
+    background-color: aliceblue;
+    width: 300px;
+    height: 300px;
+}
+</style>
+    
+</head>
+    
+<body>
+    <h1 align="center">Firebase Database Test</h1>
+        <p align="center">Test login page for Firebase Implementation</p>      
+    <div class="bg">
+        <!-- <div class="color-box"> -->
+         <form align="center" action="">
+            <h3>Login</h3>
+            <div class="form-wrapper">
+                <input id="email" type="email" placeholder="Email Address" class="form-control">                                                                                   
+            </div>
+
+            <div class="form-wrapper">
+                <input id="password" type="password" placeholder="Password" class="form-control">                                                                                   
+            </div>
+
+            <div class="form-wrapper">
+                <input id="confirmPassword" type="confirmPassword" placeholder="Confirm Password" class="form-control">                                                                                   
+            </div>
+            <div class="form-group container-login100-form-btn">
+                <button id="btn-signin type="button>
+                    Login
+                </button>
+            </div>
+
+            <div class="w-full text-center" style="margin-top: 50%; font-size: 15px;">
+                <a hfref="signin.html" class="text-dark">
+                    Already have an account?
+                </a>
+            </div>
+            </form>   
+        <!-- </div>-->
+        
+    </div>
+
+    
+    <script> src="index.js" </script>
+    <script>
+        firebase.auth().onAuthStateChanged(function(){
+           if(user){
+               window.location.href = "index.html";
+           } 
+        });
+    </script>
+    
+    
+    <!-- 
+    <button onclick="writeUserData()">Click To Write User Data</button>
+            <p id="userDataTest"></p>
+                <script>
+                    function writeUserData(userId, name, email) {
+                        firebase.database().ref('users/' + userId).set({
+                                username: name,
+                                email: email,
+                                });
+                            }
+                </script>   
+
+
+
+var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://chartiybox.firebaseio.com"
+});
+
+
+-->
+
+    
+</body>    
+</html>
+
+

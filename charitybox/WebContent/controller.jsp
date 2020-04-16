@@ -58,7 +58,7 @@ switch(htmlFormName) {
  	{
  		out.println("<br> authenticated: redirect here in future parts");
  		session.setAttribute("Username", username); 
- 		redirectURL = "home.jsp";
+ 		redirectURL = "web/index.html";
  		response.sendRedirect(redirectURL);
  	}
  	else {
@@ -80,8 +80,60 @@ switch(htmlFormName) {
     redirectURL = "index.jsp";
     response.sendRedirect(redirectURL);
     break;
+    
+ // =======================================================
+ // INITIALIZE CASE
+ // =======================================================
   
+  case "NewUser":
+	  String newPassword = request.getParameter("Password");
+	  String verifyPassword = request.getParameter("VerifyPassword");
+	  String email = request.getParameter("Email");
+	  String newUsername = request.getParameter("Username");
+	  String firstName = request.getParameter("FirstName");
+	  String lastName = request.getParameter("LastName");
+	  
+	  Boolean validateEmail = validEmail(email);
+	  Boolean emailExists = test.searchForEmail(email);
+	  Boolean usernameExists = test.searchForUsername(newUsername);
+	  
+	  if(!usernameExists && !emailExists && newPassword.equals(verifyPassword) && validateEmail){
+		  output.println("new user validated");
+	 		test.insertUser(newUsername, firstName, lastName, email, newPassword);
+	 		
+	 		// redirect back
+			session.setAttribute("ValidUser", "Valid Inputs");
+			redirectURL = "index.jsp";
+	    	response.sendRedirect(redirectURL);
+	  }
+	  else{
+		// redirect back
+			session.setAttribute("ValidUser", "Invalid Inputs");
+			redirectURL = "index.jsp";
+	    	response.sendRedirect(redirectURL);
+		}
+	  
+	  
+ 		
+	  break;
+
 }
+%>
+
+
+<%! 
+public static boolean validEmail(String email) 
+{ 
+    String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+ 
+                        "[a-zA-Z0-9_+&*-]+)*@" + 
+                        "(?:[a-zA-Z0-9-]+\\.)+[a-z" + 
+                        "A-Z]{2,7}$"; 
+                          
+    Pattern pat = Pattern.compile(emailRegex); 
+    if (email == null) 
+        return false; 
+    return pat.matcher(email).matches(); 
+} 
 %>
 
 <%
@@ -113,44 +165,11 @@ switch(htmlFormName) {
 	  
 	  output.println("Printing in the controller jsp!!! " +readCat.get(0));
 		break;
-		
+*/
+
 // ========================================================
 // ADD NEW USER
 // ========================================================
-  case "NewUser":
-	  String newPassword = request.getParameter("Password");
-	  String verifyPassword = request.getParameter("VerifyPassword");
-	  String email = request.getParameter("Email");
-	  String newUsername = request.getParameter("Username");
-	  String firstName = request.getParameter("FirstName");
-	  String lastName = request.getParameter("LastName");
-	  String gender = request.getParameter("Gender");
-	  String age = request.getParameter("Age");
-	  
-	  Boolean validateEmail = validEmail(email);
-	  Boolean emailExists = test.searchForEmail(email);
-	  Boolean usernameExists = test.searchForUsername(newUsername);
-	  
-	  if(!usernameExists && !emailExists && newPassword.equals(verifyPassword) && validateEmail){
-		  output.println("new user validated");
-	 		test.insertUser(newID, newFirstName, NewLastName, newEmail, NewPass);
-	 		
-	 		// redirect back
-			session.setAttribute("ValidUser", "Valid Inputs");
-			redirectURL = "index.jsp";
-	    	response.sendRedirect(redirectURL);
-	  }
-	  else{
-		// redirect back
-			session.setAttribute("ValidUser", "Invalid Inputs");
-			redirectURL = "index.jsp";
-	    	response.sendRedirect(redirectURL);
-		}
-	  
-	  
- 		
-	  break;
 
-*/
 
  %>

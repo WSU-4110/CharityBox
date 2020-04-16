@@ -21,6 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import charitybox.jsp.UserClass;
+
 
 @WebServlet("/DbConnect")
 public class DbFunctions extends HttpServlet{
@@ -280,6 +282,69 @@ public class DbFunctions extends HttpServlet{
 			  return false;}
 		 
 	  }
+	
+	//========================================================
+	// Search for user
+	//========================================================
+	 public Boolean searchForUsername(String username) throws SQLException{
+		 
+		 UserClass allUsers = getUsers();
+		 List<String> userList = allUsers.getUsername();
+		 return userList.contains(username);
+		
+	 }
+	
+	
+	//========================================================
+	// Search for email
+	//========================================================
+	public Boolean searchForEmail(String email) throws SQLException{
+		 
+		 UserClass allUsers = getUsers();
+		 List<String> emailList = allUsers.getEmail();
+		 return emailList.contains(email);
+		
+	}
+	
+		
+	// =======================================================
+	// SEARCH FOR AN ITEM BASED ON THE CATEGORY
+	//========================================================
+	  public UserClass getUsers() throws SQLException{
+		  	connect_func();
+		  	UserClass users = new UserClass();
+					  
+		  	String sql0 = "SELECT * FROM Users";
+		  	statement =  (Statement) connect.createStatement();
+		  	//Statement statement2 = (Statement) connect.createStatement();
+			  
+			// try blocks so that the system doesn't crash when sql statements are rejected
+			try {
+				resultSet = statement.executeQuery(sql0);
+					
+			// class that holds data for this type of search
+			
+			List<String> usernameList = new ArrayList<>();
+			List<String> emailList = new ArrayList<>();
+			
+			while(resultSet.next()) {
+				usernameList.add(resultSet.getString("UserID"));
+				emailList.add(resultSet.getString("Email"));
+			    	}
+			       
+		    users.setUsername(usernameList);
+		    users.setEmail(emailList);
+		    
+		    statement.close();
+					}
+			catch(Exception e) {
+				System.out.println(e);}
+			        
+			return users;
+	
+	  }
 	  
+	    
+	
 }
 

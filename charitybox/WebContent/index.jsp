@@ -13,14 +13,32 @@
 <html>
 
 <meta charset="ISO-8859-1">
-
-
 	<head>
 		<title> login </title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="web/charities.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
 
-<h1>Login</h1><br><br>
+<h1>CharityBox</h1>
+
+
+<body>
+	 <!--Navigation Bar-->
+    <nav>
+        <ul>
+            <li><a>FAQ</a></li>
+            <li><a href="web/feedbackform.html">Feedback Form</a></li>
+            <li><a href="web/contactform.html">Contact Us</a></li>
+            <li><a href="index.jsp">Login</a></li>
+            <li><a href="web/about.html">About Us</a>
+            </li>
+            <li><a href="web/index.html">Home</a></li>
+        </ul>
+    </nav>
+   <!--Navigation Bar-->
+</body>
 
 
 <form action = "controller.jsp" method = "GET">
