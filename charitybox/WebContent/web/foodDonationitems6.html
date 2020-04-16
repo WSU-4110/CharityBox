@@ -13,7 +13,7 @@
     <!--Navigation Bar-->
     <nav>
         <ul>
-            <li><a>Sign in/Sign Up</a></li>
+            <li><a href="../index.jsp">Sign in/Sign Up</a></li>
             <li><a href="frequentlyaskedquestions.html">FAQ</a></li>
             <li>
                 <a>Forms</a>

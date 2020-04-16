@@ -14,7 +14,6 @@
 
 <meta charset="ISO-8859-1">
 	<head>
-		<title> login </title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="web/charities.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -28,9 +27,9 @@
 	 <!--Navigation Bar-->
     <nav>
         <ul>
-            <li><a>FAQ</a></li>
+            <li><a href="web/frequentlyaskedquestions.html">FAQ</a></li>
             <li><a href="web/feedbackform.html">Feedback Form</a></li>
-            <li><a href="web/contactform.html">Contact Us</a></li>
+            <li><a href="web/contactform.php">Contact Us</a></li>
             <li><a href="index.jsp">Login</a></li>
             <li><a href="web/about.html">About Us</a>
             </li>
@@ -40,11 +39,8 @@
    <!--Navigation Bar-->
 </body>
 
+		<h2> Sign In Here! </h2>
 
-<form action = "controller.jsp" method = "GET">
-	<input type="submit" value="Initialize" name = "initialize">
-	 <input type="hidden" name="FormName" value="Initialize"/>
-</form>
 
 
 <!--form for user to input their username and password.-->

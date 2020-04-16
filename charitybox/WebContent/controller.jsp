@@ -27,6 +27,8 @@ String redirectURL;
 Object sessionUserObject = session.getAttribute("Username");
 String sessionUser = String.valueOf(sessionUserObject);
 
+test.initializeDb();
+
 switch(htmlFormName) {
 
 // ====================================================================
