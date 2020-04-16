@@ -15,11 +15,14 @@ body {
 /*----------------------Navigation Bar----------------------------------------------------*/
 nav {
     margin-right: 35px;
-    padding-bottom: 40px; 
-    display: block; 
+    padding-bottom: 40px;
+    display: block;
 }
 
 
+
+    margin-right: 10px;
+}
 ul {
     list-style-type: none;
     margin: 0px;
@@ -69,6 +72,47 @@ ul li ul li {
     overflow: visible;
     text-align: center;
 }
+    ul li {
+        float: right;
+        width: 65px;
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        color: #1E555C;
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: #1E555C;
+        }
+
+            ul li a:hover {
+                color: #7C7C7C;
+            }
+
+
+        ul li:hover ul li {
+            display: block;
+            font-size: 13px;
+
+            width: 80px;
+            background-color: whitesmoke;
+            padding: 5px 5px;
+        }
+        ul li ul li a {
+            color: #1E555C;
+        }
+        ul li ul li a:visited {
+            color: #1E555C;
+        }
+
+        ul li ul li {
+            display: none;
+            overflow: visible;
+            text-align: center;
+
+        }
 
 h1 {
     color: #FFFFFF;
@@ -76,6 +120,7 @@ h1 {
     background-color: #1E555C;
     padding: 10px;
 }
+
 /*----------------FOOTER------------------------------------*/
 footer small a {
     display: flex;
@@ -383,7 +428,7 @@ section {
     position: relative;
     background-color: #1a3639;
     transition: max-height 650ms;
-    
+
 }
 .answer::before {
     content: "";
@@ -394,7 +439,7 @@ section {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-   
+
 }
 .answer p {
         color: #FFFFFF;
@@ -418,6 +463,54 @@ section {
     width: 100%;
 }
 
+/*--------------ABOUT-------------------*/
+.about
+{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin bottom: 50px;
+    margin-top: 50px;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*---------NEWS Page-------------*/
 
 
+h1{
+    color: #FFFFFF;
+    border: 2px ridge #1E555C;
+    background-color: #1E555C;
+    padding: 5px;
 
+}
+
+h2{
+    color: #FFFFFF;
+    border: 2px ridge red;
+    background-color: red;
+    padding: 5px;
+    width: 1000px;
+
+}
+
+h3{
+    color: #FFFFFF;
+    border: 2px ridge orange;
+    background-color: orange;
+    padding: 5px;
+    width: 1000px;
+}
+
+p
+{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+}

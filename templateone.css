@@ -414,6 +414,54 @@ section {
     width: 100%;
 }
 
+/*--------------ABOUT-------------------*/
+.about
+{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin bottom: 50px;
+    margin-top: 50px;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*---------NEWS Page-------------*/
 
 
+h1{
+    color: #FFFFFF;
+    border: 2px ridge #1E555C;
+    background-color: #1E555C;
+    padding: 5px;
+    
+}
 
+h2{
+    color: #FFFFFF;
+    border: 2px ridge red;
+    background-color: red;
+    padding: 5px;
+    width: 1000px;
+    
+}
+
+h3{
+    color: #FFFFFF;
+    border: 2px ridge orange;
+    background-color: orange;
+    padding: 5px;
+    width: 1000px;
+}
+
+p
+{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
+}
