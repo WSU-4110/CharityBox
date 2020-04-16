@@ -1,0 +1,149 @@
+html{
+    background-color: #1E555C;
+    padding: 30px;
+}
+main{
+    padding: 25px;
+    border: 1px ridge aliceblue;
+    background-color: #FFFFFF;
+}
+
+h1{
+    color: #FFFFFF;
+    border: 2px ridge #1E555C;
+    background-color: #1E555C;
+    padding: 5px;   
+}
+
+<<<<<<< HEAD
+wrapper{
+=======
+#wrapper{
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+<<<<<<< HEAD
+=======
+.align{
+    margin-left: 125px;
+}
+
+
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
+/*-------------------Table--of--Organizations----------------*/
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #1E555C;
+    border: 3px ridge #000000;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
+}
+
+.box2{
+    width: 175px;
+    height: 175px;
+    background-color: #FFFFFF;
+    border: 3px ridge #000000;
+    padding: 3px;
+    margin: 7px;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+}
+
+/*----------------------Navigation Bar----------------------------------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+ul li {
+        float: right;
+        width: 85px;
+        height: 40px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        color: #1E555C;
+}
+ul li a {
+        text-decoration: none;
+    }
+ul li a:hover {
+        color: #7C7C7C;
+}
+ul li:hover ul li {
+    display: contents;
+}
+ul li ul li {
+    display: none;
+}
+
+/*----------------FOOTER------------------------------------*/
+footer {
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    padding: 10px 0px;
+    background-color: #1E555C;
+}
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+.social {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+}
+#media {
+    color: #bbccce;
+    font-family: 'Oswald', sans-serif;
+}
+.fa-icon {
+    width: 100px;
+    height: auto;
+    color: #bbccce;
+}
+.fa-facebook::before {
+    color: #1E555C;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 352e742d202598931ddaae424cd3cbc63d49d77f
+=======
+}
+
+/*---------------COUNTER-----------------------------------*/
+counter-container
+{
+    margin: 10% auto;
+    color: white;
+}
+icon
+{
+    border: 1px solid #FFF;
+    height: 100px;
+    width 100px;
+    margin 20px;
+}
+>>>>>>> ca977a30970e641178ee2785bd31d1793c262df7
