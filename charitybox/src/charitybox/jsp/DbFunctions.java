@@ -255,7 +255,7 @@ public class DbFunctions extends HttpServlet{
 		  connect_func();
 		  
 		  
-		  String sql0 = "SELECT Password FROM Users Where UserID = ?";
+		  String sql0 = "SELECT Password FROM Users Where Email = ?";
 		  
 		  preparedStatement = (PreparedStatement) connect.prepareStatement(sql0);
 		  	preparedStatement.setString(1, username);

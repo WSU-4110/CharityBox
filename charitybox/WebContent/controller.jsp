@@ -141,7 +141,7 @@ public static boolean validEmail(String email)
 <%
 /*
 // ========================================================
-// ADD ITEM CASE
+// ADD DONATION ITEM CASE
 // ========================================================
   case "AddItem":
 	  output = response.getWriter();
