@@ -14,8 +14,12 @@ body {
 
 /*----------------------Navigation Bar----------------------------------------------------*/
 nav {
-    margin-right: 10px;
+    margin-right: 35px;
+    padding-bottom: 10px; 
+    display: block; 
 }
+
+
 ul {
     list-style-type: none;
     margin: 0px;
@@ -23,47 +27,48 @@ ul {
     font-family: 'Oswald', sans-serif;
 }
 
-    ul li {
-        float: right;
-        width: 65px;
-        height: 30px;
-        margin: 0px;
-        padding: 0px;
-        font-size: 15px;
+ul li {
+    float: right;
+    width: 85px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    color: #1E555C;
+    display: inline;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #1E555C;
+}
+
+    ul li a:hover {
+        color: #7C7C7C;
+    }
+
+
+ul li:hover ul li {
+    display: block;
+    font-size: 13px;
+    width: 80px;
+    background-color: whitesmoke;
+}
+
+ul li ul li a {
+    color: #1E555C;
+}
+
+    ul li ul li a:visited {
         color: #1E555C;
     }
 
-        ul li a {
-            text-decoration: none;
-            color: #1E555C;
-        }
-
-            ul li a:hover {
-                color: #7C7C7C;
-            }
-            
-
-        ul li:hover ul li {
-            display: block;
-            font-size: 13px;
-           
-            width: 80px;
-            background-color: whitesmoke;
-            padding: 5px 5px;
-        }
-        ul li ul li a {
-            color: #1E555C;
-        }
-        ul li ul li a:visited {
-            color: #1E555C;
-        }
-
-        ul li ul li {
-            display: none;
-            overflow: visible;
-            text-align: center;
-
-        }
+ul li ul li {
+    display: none;
+    overflow: visible;
+    text-align: center;
+}
 
 h1 {
     color: #FFFFFF;
@@ -71,7 +76,6 @@ h1 {
     background-color: #1E555C;
     padding: 10px;
 }
-
 /*----------------FOOTER------------------------------------*/
 footer small a {
     display: flex;
