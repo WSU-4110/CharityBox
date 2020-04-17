@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="charitybox/src"/>
+	<classpathentry kind="lib" path="charitybox/WebContent/WEB-INF/lib/jstl-1.2.jar" sourcepath="C:/Program Files/Java/jdk-13.0.1/lib/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://docs.oracle.com/en/java/javase/13/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="charitybox/WebContent/WEB-INF/lib/mysql-connector-java-8.0.17.jar" sourcepath="C:/Program Files/Java/jdk-13.0.1/lib/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://docs.oracle.com/en/java/javase/13/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="charitybox/WebContent/WEB-INF/lib/servlet-api.jar" sourcepath="C:/Program Files/Java/jdk-13.0.1/lib/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://docs.oracle.com/en/java/javase/13/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="charitybox/charitybox/build/classes/charitybox/jsp/UserClass.class"/>
+	<classpathentry kind="output" path="charitybox/build/classes"/>
+</classpath>

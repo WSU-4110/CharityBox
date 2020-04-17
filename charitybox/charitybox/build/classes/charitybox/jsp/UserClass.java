@@ -13,8 +13,6 @@ public class UserClass {
 	private List<String> gender = new ArrayList<>();
 	private List<String> age = new ArrayList<>();
 	
-
-	
 	public List<String> getPassword(){
 		
 		return password;
