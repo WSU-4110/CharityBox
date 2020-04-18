@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>AuthenticateServlet.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">UserClass2Test2 (Apr 17, 2020 9:31:41 PM)</a> &gt; <a href="../../index.html" class="el_group">charitybox</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">charitybox.jsp</a> &gt; <span class="el_source">AuthenticateServlet.java</span></div><h1>AuthenticateServlet.java</h1><pre class="source lang-java linenums">package charitybox.jsp;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+/**
+ * Servlet implementation class DbServlet
+ */
+@WebServlet(&quot;/Authenticate&quot;)
+public class AuthenticateServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+<span class="nc" id="L25">	private Connection connect = null;</span>
+<span class="nc" id="L26">	private Statement statement = null;</span>
+<span class="nc" id="L27">	private PreparedStatement preparedStatement = null;</span>
+<span class="nc" id="L28">	private ResultSet resultSet = null;</span>
+	
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AuthenticateServlet() {
+<span class="nc" id="L34">        super();</span>
+        // TODO Auto-generated constructor stub
+<span class="nc" id="L36">    }</span>
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */ 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+       
+    	// ignore this
+<span class="nc" id="L45">    	String action = request.getServletPath();</span>
+<span class="nc" id="L46">    	System.out.println(&quot;inside the servlet&quot;);</span>
+<span class="nc" id="L47">        PrintWriter out = response.getWriter();</span>
+<span class="nc" id="L48">        out.println(&quot;it worked&quot; + action);</span>
+        
+        // connect to session
+<span class="nc" id="L51">        HttpSession session = request.getSession();</span>
+        
+        // get http parameters
+<span class="nc" id="L54">        String username = request.getParameter(&quot;Username&quot;);</span>
+<span class="nc" id="L55">    	String password = request.getParameter(&quot;Password&quot;);</span>
+    	
+<span class="nc" id="L57">    	out.println(username + &quot; &quot; + password);</span>
+<span class="nc" id="L58">    	Boolean auth = false;</span>
+    	
+<span class="nc" id="L60">    	DbFunctions test = new DbFunctions();</span>
+    	try {
+    	// call authenticate function and store boolean value
+<span class="nc" id="L63">    	auth = test.authenticate(username, password);</span>
+<span class="nc" id="L64">    	}</span>
+<span class="nc" id="L65">    	catch(Exception e) { </span>
+<span class="nc" id="L66">    		System.out.println(e);}</span>
+    	
+<span class="nc bnc" id="L68" title="All 2 branches missed.">    	if(auth == true)</span>
+    	{
+<span class="nc" id="L70">    		out.println(&quot;authenticated: redirect here in future parts&quot;);</span>
+<span class="nc" id="L71">    		session.setAttribute(&quot;Username&quot;, username); </span>
+<span class="nc" id="L72">    	}</span>
+    	else {
+<span class="nc" id="L74">    		out.println(&quot;Incorrect password or username: redirect here in future parts&quot;);</span>
+    	}
+<span class="nc" id="L76">    	out.println(session.getAttribute(&quot;Username&quot;));</span>
+    	
+    	
+    	 
+<span class="nc" id="L80">    }</span>
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+<span class="nc" id="L86">		doGet(request, response);</span>
+<span class="nc" id="L87">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span>UserClass2Test2 (Apr 17, 2020 9:31:41 PM)</div></body></html>

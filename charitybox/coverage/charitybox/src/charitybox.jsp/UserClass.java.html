@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>UserClass.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">UserClass2Test2 (Apr 17, 2020 9:31:41 PM)</a> &gt; <a href="../../index.html" class="el_group">charitybox</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">charitybox.jsp</a> &gt; <span class="el_source">UserClass.java</span></div><h1>UserClass.java</h1><pre class="source lang-java linenums">package charitybox.jsp;
+
+import java.util.ArrayList;
+import java.util.List;
+
+<span class="nc" id="L6">public class UserClass {</span>
+
+<span class="nc" id="L8">	private List&lt;String&gt; username = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L9">	private List&lt;String&gt; password = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L10">	private List&lt;String&gt; email = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L11">	private List&lt;String&gt; firstName = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L12">	private List&lt;String&gt; lastName = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L13">	private List&lt;String&gt; gender = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L14">	private List&lt;String&gt; age = new ArrayList&lt;&gt;();</span>
+	
+	public List&lt;String&gt; getPassword(){
+		
+<span class="nc" id="L18">		return password;</span>
+	}
+	public void setPassword(List&lt;String&gt; p_password) {
+<span class="nc bnc" id="L21" title="All 2 branches missed.">		if(!password.isEmpty()) {</span>
+<span class="nc" id="L22">			password.clear();</span>
+		}
+<span class="nc" id="L24">		password.addAll(p_password);</span>
+		
+<span class="nc" id="L26">	}</span>
+	public List&lt;String&gt; getUsername(){
+		
+<span class="nc" id="L29">		return username;</span>
+	}
+	public void setUsername(List&lt;String&gt; p_username) {
+<span class="nc bnc" id="L32" title="All 2 branches missed.">		if(!username.isEmpty()) {</span>
+<span class="nc" id="L33">			username.clear();</span>
+		}
+<span class="nc" id="L35">		username.addAll(p_username);</span>
+<span class="nc" id="L36">	}</span>
+
+	public List&lt;String&gt; getEmail(){
+		
+<span class="nc" id="L40">		return email;</span>
+	}
+	public void setEmail(List&lt;String&gt; p_email) {
+<span class="nc bnc" id="L43" title="All 2 branches missed.">		if(!email.isEmpty()) {</span>
+<span class="nc" id="L44">			email.clear();</span>
+		}
+<span class="nc" id="L46">		email.addAll(p_email);</span>
+		
+<span class="nc" id="L48">	}</span>
+	public List&lt;String&gt; getFirstName(){
+	
+<span class="nc" id="L51">		return firstName;</span>
+	}
+	public void setFirstName(List&lt;String&gt; p_first) {
+<span class="nc bnc" id="L54" title="All 2 branches missed.">		if(!firstName.isEmpty()) {</span>
+<span class="nc" id="L55">			firstName.clear();</span>
+		}
+<span class="nc" id="L57">		firstName.addAll(p_first);</span>
+		
+<span class="nc" id="L59">	}</span>
+	public List&lt;String&gt; getGender(){
+		
+<span class="nc" id="L62">		return gender;</span>
+	}
+	public void setgender(List&lt;String&gt; p_gender) {
+<span class="nc bnc" id="L65" title="All 2 branches missed.">		if(!gender.isEmpty()) {</span>
+<span class="nc" id="L66">			gender.clear();</span>
+		}
+<span class="nc" id="L68">		gender.addAll(p_gender);</span>
+		
+<span class="nc" id="L70">	}</span>
+public List&lt;String&gt; getAge(){
+		
+<span class="nc" id="L73">		return age;</span>
+	}
+	public void setAge(List&lt;String&gt; p_age) {
+<span class="nc bnc" id="L76" title="All 2 branches missed.">		if(!age.isEmpty()) {</span>
+<span class="nc" id="L77">			age.clear();</span>
+		}
+<span class="nc" id="L79">		age.addAll(p_age);</span>
+		
+<span class="nc" id="L81">	}</span>
+	
+	
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span>UserClass2Test2 (Apr 17, 2020 9:31:41 PM)</div></body></html>
