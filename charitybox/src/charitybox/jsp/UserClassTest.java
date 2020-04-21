@@ -10,6 +10,9 @@ class UserClassTest {
 	
 	private UserClass u;
 	List<String> l = new ArrayList<String>();
+	private UserClass fN;
+	List<String> aN = new ArrayList<String>();
+	
 	
 	@Test
 	void testGetPassword() {
@@ -51,5 +54,49 @@ class UserClassTest {
 		u.setEmail(l);
 		assertEquals(l,u.getEmail());
 	}
+	
+	
+	@Test
+	void testGetFirstName() {
+		fN = new UserClass();
+		fN.setFirstName(aN);
+		assertEquals(aN, fN.getFirstName());
+	}
+
+	@Test
+	void testSetFirstName() {
+		fN = new UserClass();
+		fN.setFirstName(aN);
+		assertEquals(aN, fN.getFirstName());
+	}
+
+	@Test
+	void testGetGender() {
+		fN = new UserClass();
+		fN.setgender(aN);
+		assertEquals(aN, fN.getGender());
+	}
+
+	@Test
+	void testSetgender() {
+		fN = new UserClass();
+		fN.setgender(aN);
+		assertEquals(aN, fN.getGender());
+	}
+
+	@Test
+	void testGetAge() {
+		fN = new UserClass();
+		fN.setAge(aN);
+		assertEquals(aN, fN.getAge());
+	}
+
+	@Test
+	void testSetAge() {
+		fN = new UserClass();
+		fN.setAge(aN);
+		assertEquals(aN, fN.getAge());
+	}
+
 
 }

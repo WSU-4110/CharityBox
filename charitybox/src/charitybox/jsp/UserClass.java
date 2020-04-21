@@ -12,6 +12,12 @@ public class UserClass {
 	private List<String> lastName = new ArrayList<>();
 	private List<String> gender = new ArrayList<>();
 	private List<String> age = new ArrayList<>();
+	private List<String> orgName = new ArrayList<>();
+	private List<String> orgUsername = new ArrayList<>();
+	private List<String> orgPassword = new ArrayList<>();
+	private List<String> date = new ArrayList<>();
+	private List<String> orgAddress = new ArrayList<>();
+	private List<String> orgPhone = new ArrayList<>();
 	
 
 	
@@ -79,6 +85,77 @@ public List<String> getAge(){
 			age.clear();
 		}
 		age.addAll(p_age);
+		
+	}
+	public List<String> getOrgName(){
+		
+		return orgName;
+	}
+	public void setOrgName(List<String> p_orgName) {
+		if(!orgName.isEmpty()) {
+			orgName.clear();
+		}
+		orgName.addAll(p_orgName);
+		
+	}
+	
+public List<String> getOrgUsername(){
+		
+		return orgUsername;
+	}
+	public void setOrgUsername(List<String> p_orgUsername) {
+		if(!orgUsername.isEmpty()) {
+			orgUsername.clear();
+		}
+		orgUsername.addAll(p_orgUsername);
+		
+	}
+	
+public List<String> getOrgPassword(){
+		
+		return orgPassword;
+	}
+	public void setOrgPassword(List<String> p_orgPassword) {
+		if(!orgPassword.isEmpty()) {
+			orgPassword.clear();
+		}
+		orgPassword.addAll(p_orgPassword);
+		
+	}
+	
+public List<String> getDate(){
+		
+		return date;
+	}
+	public void setDate(List<String> p_date) {
+		if(!date.isEmpty()) {
+			date.clear();
+		}
+		date.addAll(p_date);
+		
+	}
+	
+public List<String> getOrgAddress(){
+		
+		return orgAddress;
+	}
+	public void setOrgAddress(List<String> p_orgAddress) {
+		if(!orgAddress.isEmpty()) {
+			orgAddress.clear();
+		}
+		orgAddress.addAll(p_orgAddress);
+		
+	}
+	
+public List<String> getOrgPhone(){
+		
+		return orgPhone;
+	}
+	public void setOrgPhone(List<String> p_orgPhone) {
+		if(!orgPhone.isEmpty()) {
+			orgPhone.clear();
+		}
+		orgPhone.addAll(p_orgPhone);
 		
 	}
 	
