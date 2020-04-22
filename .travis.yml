@@ -4,9 +4,10 @@ addons:
   apt:
     packages:
       - ant
+before_script:
+- cd charitybox
 
 script: 
-- cd charitybox
 - ant build
 
 jdk:
