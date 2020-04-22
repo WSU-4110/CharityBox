@@ -4,14 +4,10 @@ addons:
   apt:
     packages:
       - ant
-before_script:
-- cd charitybox
 
 script: 
+- cd charitybox
 - ant build
-- ant UserClassTest
-- ant DBClassTest
-- ant UserClass2Test2
 
 jdk:
   - oraclejdk13
