@@ -4,7 +4,6 @@ addons:
   apt:
     packages:
       - ant
-install: ant deps
 script: ant main
 jdk:
   - oraclejdk13
