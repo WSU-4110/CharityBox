@@ -4,6 +4,6 @@ addons:
   apt:
     packages:
       - ant
-script: ant main
+script: ant test
 jdk:
   - oraclejdk13
