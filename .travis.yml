@@ -6,7 +6,7 @@ addons:
       - ant
 
 script: 
-- cd CharityBox/charitybox
+- cd charitybox
 - ant build
 
 jdk:
