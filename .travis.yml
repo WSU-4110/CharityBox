@@ -9,6 +9,9 @@ before_script:
 
 script: 
 - ant build
+- ant UserClassTest
+- ant DBClassTest
+- ant UserClass2Test2
 
 jdk:
   - oraclejdk13
