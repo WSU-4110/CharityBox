@@ -4,9 +4,10 @@ addons:
   apt:
     packages:
       - ant
+
 script: 
+- cd CharityBox\charitybox
 - ant build
-- ant build \charitybox\build.xml
-- ant \charitybox\build.xml
+
 jdk:
   - oraclejdk13
