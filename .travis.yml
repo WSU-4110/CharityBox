@@ -1,6 +1,5 @@
 dist: xenial
 language: java
-wget -q http://mirrors.netix.net/apache/ant/binaries/apache-ant-1.10.7-bin.tar.gz && tar xzf apache-ant-*-bin.tar.gz
 addons:
   apt:
     packages:
