@@ -10,9 +10,9 @@ script:
 - cd src
 - cd charitybox
 - cd jsp
-- junit UserClasstest
-- junit DbClasstest
-- junit UserClass2Test2
+- junit UserClasstest.java
+- junit DbClasstest.java
+- junit UserClass2Test2.java
 
 jdk:
   - oraclejdk13
