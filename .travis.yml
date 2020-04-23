@@ -1,5 +1,6 @@
 dist: xenial
 language: java
+wget -q http://mirrors.netix.net/apache/ant/binaries/apache-ant-1.10.7-bin.tar.gz && tar xzf apache-ant-*-bin.tar.gz
 addons:
   apt:
     packages:
@@ -7,7 +8,11 @@ addons:
 
 script: 
 - cd charitybox
-- ant build
+- cd src
+- cd charitybox.jsp
+- junit UserClasstest
+- junit DbClasstest
+- junit UserClass2Test2
 
 jdk:
   - oraclejdk13

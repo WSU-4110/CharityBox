@@ -3,7 +3,8 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="FarahTahnin-assignment6">
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="FarahTahnin-assignment6">
     <property environment="env"/>
     <property name="ECLIPSE_HOME" value="../../../../../../eclipse/jee-2020-03/eclipse/"/>
     <property name="junit.output.dir" value="junit"/>
@@ -73,20 +74,6 @@
         <path refid="EAR Libraries.libraryclasspath"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
-    <path id="run.UserClassTest.classpath">
-        <path refid="FarahTahnin-assignment6.classpath"/>
-        <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath"/>
-        <path refid="Web App Libraries.libraryclasspath"/>
-        <path refid="EAR Libraries.libraryclasspath"/>
-        <path refid="JUnit 5.libraryclasspath"/>
-    </path>
-    <path id="run.UserClassTest.testGetGender.classpath">
-        <path refid="FarahTahnin-assignment6.classpath"/>
-        <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath"/>
-        <path refid="Web App Libraries.libraryclasspath"/>
-        <path refid="EAR Libraries.libraryclasspath"/>
-        <path refid="JUnit 5.libraryclasspath"/>
-    </path>
     <path id="run.DBClassTest.classpath">
         <path refid="FarahTahnin-assignment6.classpath"/>
         <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath"/>
@@ -101,11 +88,24 @@
         <path refid="EAR Libraries.libraryclasspath"/>
         <path refid="JUnit 5.libraryclasspath"/>
     </path>
+    <path id="run.UserClassTest.classpath">
+        <path refid="FarahTahnin-assignment6.classpath"/>
+        <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
+    <path id="run.UserClassTest.testGetGender.classpath">
+        <path refid="FarahTahnin-assignment6.classpath"/>
+        <path refid="Apache Tomcat v9.0 [Apache Tomcat v9.0].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JUnit 5.libraryclasspath"/>
+    </path>
     <target name="init">
         <mkdir dir="build/classes"/>
         <copy includeemptydirs="false" todir="build/classes">
             <fileset dir="src">
-                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -137,24 +137,6 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="UserClassTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="charitybox.jsp.UserClassTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.UserClassTest.classpath"/>
-        </junit>
-    </target>
-    <target name="UserClassTest.testGetGender">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="charitybox.jsp.UserClassTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.UserClassTest.testGetGender.classpath"/>
-        </junit>
-    </target>
     <target name="DBClassTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
@@ -171,6 +153,24 @@
             <test name="charitybox.jsp.UserClass2Test2" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="run.UserClass2Test2.classpath"/>
+        </junit>
+    </target>
+    <target name="UserClassTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="charitybox.jsp.UserClassTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.UserClassTest.classpath"/>
+        </junit>
+    </target>
+    <target name="UserClassTest.testGetGender">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="charitybox.jsp.UserClassTest" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="run.UserClassTest.testGetGender.classpath"/>
         </junit>
     </target>
     <target name="junitreport">

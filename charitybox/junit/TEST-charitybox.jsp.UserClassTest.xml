@@ -1,120 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="DESKTOP-6MHVG12" name="charitybox.jsp.UserClassTest" skipped="0" tests="1" time="0.104" timestamp="2020-04-22T03:51:20">
+<testsuite errors="1" failures="0" hostname="DESKTOP-6MHVG12" name="charitybox.jsp.UserClassTest" skipped="0" tests="1" time="0.129" timestamp="2020-04-23T21:58:55">
   <properties>
-    <property name="ant.library.dir" value="C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324\lib" />
-    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
-    <property name="java.specification.version" value="13" />
-    <property name="env.USERPROFILE" value="C:\Users\Farah Tahnin" />
-    <property name="ant.project.name" value="FarahTahnin-assignment6" />
-    <property name="sun.cpu.isalist" value="amd64" />
-    <property name="sun.jnu.encoding" value="Cp1252" />
-    <property name="sun.arch.data.model" value="64" />
-    <property name="debuglevel" value="source,lines,vars" />
-    <property name="env.FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer" />
-    <property name="java.vendor.url" value="https://java.oracle.com/" />
-    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
-    <property name="env.OS" value="Windows_NT" />
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner charitybox.jsp.UserClassTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\junit\TEST-charitybox.jsp.UserClassTest.xml crashfile=C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\junitvmwatcher1463532353504497149.properties propsfile=C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\junit10875237888332472870.properties" />
-    <property name="jdk.debug" value="release" />
-    <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
-    <property name="eclipse.pdebuild.templates" value="C:\Users\Farah Tahnin\eclipse\jee-2020-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.700.v20191228-1214\templates" />
-    <property name="java.specification.vendor" value="Oracle Corporation" />
-    <property name="java.version.date" value="2019-10-15" />
-    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk-13.0.1" />
-    <property name="java.home" value="C:\Program Files\Java\jdk-13.0.1" />
-    <property name="env.ProgramFiles" value="C:\Program Files" />
-    <property name="file.separator" value="\" />
-    <property name="basedir" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox" />
-    <property name="java.vm.compressedOopsMode" value="32-bit" />
-    <property name="line.separator" value="&#xd;&#xa;" />
-    <property name="env.PROMPT" value="$P$G" />
-    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
-    <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="env.LOCALAPPDATA" value="C:\Users\Farah Tahnin\AppData\Local" />
-    <property name="env.USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-6MHVG12" />
-    <property name="env.PROCESSOR_REVISION" value="4e03" />
-    <property name="env.PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules" />
-    <property name="user.script" value="" />
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
-    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 78 Stepping 3, GenuineIntel" />
-    <property name="java.runtime.version" value="13.0.1+9" />
-    <property name="user.name" value="Farah Tahnin" />
-    <property name="env.DriverData" value="C:\Windows\System32\Drivers\DriverData" />
-    <property name="env.ProgramW6432" value="C:\Program Files" />
-    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
-    <property name="env.PUBLIC" value="C:\Users\Public" />
-    <property name="file.encoding" value="Cp1252" />
-    <property name="env.COMPUTERNAME" value="DESKTOP-6MHVG12" />
-    <property name="env.HOMEPATH" value="\Users\Farah Tahnin" />
-    <property name="env.APPDATA" value="C:\Users\Farah Tahnin\AppData\Roaming" />
-    <property name="env.SystemDrive" value="C:" />
-    <property name="env.ProgramData" value="C:\ProgramData" />
-    <property name="java.io.tmpdir" value="C:\Users\FARAHT~1\AppData\Local\Temp\" />
-    <property name="java.version" value="13.0.1" />
-    <property name="ant.file.FarahTahnin-assignment6" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\build.xml" />
-    <property name="env.HOMEDRIVE" value="C:" />
-    <property name="env.PROCESSOR_LEVEL" value="6" />
-    <property name="env.Path" value="C:/Program Files/Java/jdk-13.0.1/bin/server;C:/Program Files/Java/jdk-13.0.1/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk-13.0.1\bin;C:\PHP7;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Ampps\php;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Farah Tahnin\AppData\Local\Microsoft\WindowsApps;C:\Users\Farah Tahnin\AppData\Roaming\Composer\vendor\bin;C:\WINDOWS\system32;" />
-    <property name="env.TMP" value="C:\Users\FARAHT~1\AppData\Local\Temp" />
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
-    <property name="ant.home" value="C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324" />
-    <property name="sun.os.patch.level" value="" />
-    <property name="junit.output.dir" value="junit" />
-    <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on September 1 2019" />
-    <property name="eclipse.pdebuild.scripts" value="C:\Users\Farah Tahnin\eclipse\jee-2020-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.700.v20191228-1214\scripts" />
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-13.0.1/bin/server;C:/Program Files/Java/jdk-13.0.1/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk-13.0.1\bin;C:\PHP7;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Ampps\php;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Farah Tahnin\AppData\Local\Microsoft\WindowsApps;C:\Users\Farah Tahnin\AppData\Roaming\Composer\vendor\bin;C:\WINDOWS\system32;;." />
-    <property name="ant.file.type.FarahTahnin-assignment6" value="file" />
     <property name="java.vendor" value="Oracle Corporation" />
-    <property name="env.LOGONSERVER" value="\\DESKTOP-6MHVG12" />
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
-    <property name="java.class.path" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\build\classes;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\annotations-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-ant.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-ha.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-ssi.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-storeconfig.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-tribes.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\ecj-4.13.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\el-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jasper-el.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jasper.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jaspic-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jsp-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-coyote.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-dbcp.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-cs.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-de.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-es.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-fr.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ja.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ko.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-pt-BR.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ru.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-zh-CN.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-jdbc.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-jni.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-util-scan.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-util.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-websocket.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\websocket-api.jar;C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\WebContent\WEB-INF\lib\jstl-1.2.jar;C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\WebContent\WEB-INF\lib\mysql-connector-java-8.0.17.jar;C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\WebContent\WEB-INF\lib\servlet-api.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.api_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.engine_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.migrationsupport_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.params_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.commons_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.engine_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.launcher_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.runner_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.suite.api_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.vintage.engine_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.opentest4j_1.2.0.v20190826-0900.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.apiguardian_1.1.0.v20190826-0900.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324\lib\ant-launcher.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324\lib\ant.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324\lib\ant-junit.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324\lib\ant-junit4.jar" />
-    <property name="source" value="12" />
-    <property name="java.vm.vendor" value="Oracle Corporation" />
-    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
-    <property name="user.variant" value="" />
-    <property name="env.SystemRoot" value="C:\WINDOWS" />
-    <property name="os.name" value="Windows 10" />
-    <property name="java.vm.specification.version" value="13" />
-    <property name="user.country" value="US" />
+    <property name="env.USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-6MHVG12" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
-    <property name="env.USERDOMAIN" value="DESKTOP-6MHVG12" />
-    <property name="sun.cpu.endian" value="little" />
-    <property name="user.home" value="C:\Users\Farah Tahnin" />
-    <property name="user.language" value="en" />
-    <property name="eclipse.pdebuild.home" value="C:\Users\Farah Tahnin\eclipse\jee-2020-03\eclipse\..\..\..\.p2\pool\plugins\org.eclipse.pde.build_3.10.700.v20191228-1214\." />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows 10" />
+    <property name="env.DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+    <property name="env.COMPUTERNAME" value="DESKTOP-6MHVG12" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
     <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
-    <property name="ant.java.version" value="13" />
-    <property name="env.SESSIONNAME" value="Console" />
-    <property name="env.ANT_HOME" value="C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324" />
-    <property name="env.windir" value="C:\WINDOWS" />
-    <property name="ant.file" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\build.xml" />
-    <property name="path.separator" value=";" />
-    <property name="os.version" value="10.0" />
-    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
-    <property name="ant.project.invoked-targets" value="UserClassTest" />
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
-    <property name="ECLIPSE_HOME" value="../../../../../../eclipse/jee-2020-03/eclipse/" />
-    <property name="env.VS150COMCOMNTOOLS" value="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\" />
-    <property name="ant.core.lib" value="C:\Users\Farah Tahnin\.p2\pool\plugins\org.apache.ant_1.10.7.v20190926-0324\lib\ant.jar" />
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
-    <property name="user.dir" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox" />
-    <property name="env.USERNAME" value="Farah Tahnin" />
-    <property name="os.arch" value="amd64" />
-    <property name="env.OneDriveConsumer" value="C:\Users\Farah Tahnin\OneDrive" />
-    <property name="target" value="12" />
-    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
-    <property name="java.vm.info" value="mixed mode, sharing" />
-    <property name="java.vm.version" value="13.0.1+9" />
-    <property name="env.FPS_BROWSER_USER_PROFILE_STRING" value="Default" />
-    <property name="env.TEMP" value="C:\Users\FARAHT~1\AppData\Local\Temp" />
-    <property name="java.class.version" value="57.0" />
-    <property name="env.OneDrive" value="C:\Users\Farah Tahnin\OneDrive" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14" />
+    <property name="java.runtime.version" value="13.0.1+9" />
+    <property name="env.HOMEPATH" value="\Users\Farah Tahnin" />
+    <property name="user.name" value="Farah Tahnin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin" />
     <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="FarahTahnin-assignment6" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="java.version" value="13.0.1" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 78 Stepping 3, GenuineIntel" />
+    <property name="env.TEMP" value="C:\Users\FARAHT~1\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="ant.file.type.FarahTahnin-assignment6" value="file" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk-13.0.1\bin\java.exe" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="ECLIPSE_HOME" value="../../../../../../eclipse/jee-2020-03/eclipse/" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="57.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jdk-13.0.1" />
+    <property name="env.PSModulePath" value="C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules" />
+    <property name="env.APPDATA" value="C:\Users\Farah Tahnin\AppData\Roaming" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="os.version" value="10.0" />
+    <property name="ant.file" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\build.xml" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.=::" value="::\" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="13.0.1+9" />
+    <property name="user.variant" value="" />
+    <property name="env.USERPROFILE" value="C:\Users\Farah Tahnin" />
+    <property name="ant.library.dir" value="C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk-13.0.1" />
+    <property name="env.TMP" value="C:\Users\FARAHT~1\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="user.script" value="" />
+    <property name="target" value="12" />
+    <property name="user.home" value="C:\Users\Farah Tahnin" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="java.version.date" value="2019-10-15" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk-13.0.1\bin;C:\PHP7;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Ampps\php;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Farah Tahnin\AppData\Local\Microsoft\WindowsApps;C:\Users\Farah Tahnin\AppData\Roaming\Composer\vendor\bin;." />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner charitybox.jsp.UserClassTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\junit\TEST-charitybox.jsp.UserClassTest.xml crashfile=C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\junitvmwatcher6305626293892917202.properties propsfile=C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\junit1046660161503394396.properties" />
+    <property name="java.class.path" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\build\classes;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\annotations-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-ant.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-ha.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-ssi.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-storeconfig.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina-tribes.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\catalina.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\ecj-4.13.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\el-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jasper-el.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jasper.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jaspic-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\jsp-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-api.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-coyote.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-dbcp.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-cs.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-de.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-es.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-fr.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ja.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ko.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-pt-BR.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ru.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-zh-CN.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-jdbc.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-jni.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-util-scan.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-util.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\tomcat-websocket.jar;C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\websocket-api.jar;C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\WebContent\WEB-INF\lib\jstl-1.2.jar;C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\WebContent\WEB-INF\lib\mysql-connector-java-8.0.17.jar;C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\WebContent\WEB-INF\lib\servlet-api.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.api_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.engine_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.migrationsupport_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.jupiter.params_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.commons_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.engine_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.launcher_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.runner_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.platform.suite.api_1.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit.vintage.engine_5.6.0.v20200203-2009.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.opentest4j_1.2.0.v20190826-0900.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.apiguardian_1.1.0.v20190826-0900.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar;C:\Users\Farah Tahnin\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\lib\ant-launcher.jar;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\lib\ant.jar;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\lib\ant-junit.jar;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.14 compiled on March 12 2019" />
+    <property name="jdk.debug" value="release" />
+    <property name="env.VS150COMCOMNTOOLS" value="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.windir" value="C:\WINDOWS" />
+    <property name="env.LOGONSERVER" value="\\DESKTOP-6MHVG12" />
+    <property name="java.vm.specification.version" value="13" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="env.OneDrive" value="C:\Users\Farah Tahnin\OneDrive" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ANT_HOME" value="C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="env.PROCESSOR_REVISION" value="4e03" />
+    <property name="java.io.tmpdir" value="C:\Users\FARAHT~1\AppData\Local\Temp\" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="env.OneDriveConsumer" value="C:\Users\Farah Tahnin\OneDrive" />
+    <property name="env.SystemRoot" value="C:\WINDOWS" />
+    <property name="os.arch" value="amd64" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" UserClassTest" />
+    <property name="user.dir" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\Farah Tahnin\AppData\Local" />
+    <property name="ant.file.FarahTahnin-assignment6" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox\build.xml" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.Path" value="C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Java\jdk-13.0.1\bin;C:\PHP7;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Ampps\php;C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Farah Tahnin\AppData\Local\Microsoft\WindowsApps;C:\Users\Farah Tahnin\AppData\Roaming\Composer\vendor\bin" />
+    <property name="basedir" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox" />
+    <property name="ant.java.version" value="13" />
+    <property name="ant.core.lib" value="C:\Users\Farah Tahnin\Desktop\apache-ant-1.9.14\lib\ant.jar" />
+    <property name="env.USERNAME" value="Farah Tahnin" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="source" value="12" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="env.USERDOMAIN" value="DESKTOP-6MHVG12" />
+    <property name="java.specification.version" value="13" />
+    <property name="env.=C:" value="C:\Users\Farah Tahnin\Desktop\College\Winter_2020\csc4111\CharityBox\charitybox" />
+    <property name="ant.project.invoked-targets" value="UserClassTest" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
-  <testcase classname="charitybox.jsp.UserClassTest" name="initializationError" time="0.007">
+  <testcase classname="charitybox.jsp.UserClassTest" name="initializationError" time="0.009">
     <error message="Invalid test class &apos;charitybox.jsp.UserClassTest&apos;:&#xa;  1. The class charitybox.jsp.UserClassTest is not public.&#xa;  2. Test class should have exactly one public constructor&#xa;  3. No runnable methods" type="org.junit.runners.model.InvalidTestClassError">org.junit.runners.model.InvalidTestClassError: Invalid test class &apos;charitybox.jsp.UserClassTest&apos;:
   1. The class charitybox.jsp.UserClassTest is not public.
   2. Test class should have exactly one public constructor
