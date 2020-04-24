@@ -13,6 +13,7 @@ TOOLS NECESSARY:
 * MYSQL
 * Tomcat 9.0
 * Brackets/Visual Studio 
+* 000webhost
 
 INSTALLATION:
 * We used Eclipse so we could use java to create logic for our backend. The way to download Eclipse is simple click this link below and select the operating system you are using. 
