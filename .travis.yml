@@ -7,12 +7,7 @@ addons:
 
 script: 
 - cd charitybox
-- cd src
-- cd charitybox
-- cd jsp
-- junit UserClasstest.java
-- junit DbClasstest.java
-- junit UserClass2Test2.java
+- ant build
 
 jdk:
   - oraclejdk13
