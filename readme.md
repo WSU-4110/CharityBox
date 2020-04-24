@@ -28,6 +28,5 @@ LINKS FOR INSTALLATION:
 * Brackets: https://brackets.en.softonic.com/download
 * Visual Studios: https://visualstudio.microsoft.com/downloads
 * 000webhost: https://www.000webhost.com/
-*
 
 [![Build Status](https://travis-ci.org/WSU-4110/CharityBox.svg?branch=master)](https://travis-ci.org/WSU-4110/CharityBox)
